@@ -9,7 +9,7 @@ namespace Mission_4.Models
     public class gradeCalculatorModel
     {
         [Required]
-        
+        [Range(0, 100)]
         public float assignments { get; set; }
         [Required]
         [Range(0,100)]
