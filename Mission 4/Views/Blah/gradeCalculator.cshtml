@@ -1,0 +1,34 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Grade Calculator";
+}
+
+
+<!--A "Grade Calculator" form that takes as input a percentage scored for each grade category listed in the syllabus-->
+<h4>Grade Calculator</h4>
+<form action="" method="post">
+    <label>Assignments:</label>
+    <input id="valueAssignments" /><label>%</label><br>
+    <label>Group Project:</label>
+    <input id="valueGroupProject" /><label>%</label><br>
+    <label>Quizzes:</label>
+    <input id="valueQuizzes" /><label>%</label><br>
+    <label>Midterm Exam:</label>
+    <input id="valueMidterm" /><label>%</label><br>
+    <label>Final Exam:</label>
+    <input id="valueFinal" /><label>%</label><br>
+    <label>INTEX:</label>
+    <input id="valueINTEX" /><label>%</label><br><br>
+    <input type="button" id="calc" value="Calculate" /><br><br>
+    <label id="result"></label>
+</form>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<script src="js/gradeCalculator.js"></script>

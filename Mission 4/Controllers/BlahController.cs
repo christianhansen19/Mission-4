@@ -12,5 +12,10 @@ namespace Mission_4.Controllers
         {
             return View();
         }
+
+        public IActionResult gradeCalculator()
+        {
+            return View();
+        }
     }
 }

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <!--A webpage title-->
+    <title>@ViewData["Title"]</title>
+
+    <!--Style the site using Bootstrap.-->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--Include at least one change to the styling using your own CSS file.-->
+    <link href="css/default.css" rel="stylesheet" />
+
+    <!--An icon for the website (displayed on the tab next to the website title) (#notcoveredinthevideos)-->
+    <link href="img/ch.jpeg" rel="shortcut icon" />
+</head>
+<body>
+
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a asp-controller="Blah" asp-action="gradeCalculator">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+</body>
+</html>
