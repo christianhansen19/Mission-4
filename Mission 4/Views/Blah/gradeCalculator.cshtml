@@ -6,23 +6,23 @@
 }
 
 @model gradeCalculatorModel;
-
 <!--A "Grade Calculator" form that takes as input a percentage scored for each grade category listed in the syllabus-->
 <h4>Grade Calculator</h4>
 <form action="" method="post">
     <label>Assignments:</label>
-    <input id="valueAssignments" asp-for="assignments"/><label>%</label><br>
+    <input id="valueAssignments" asp-for="assignments" /><label>%</label><br>
     <label>Group Project:</label>
-    <input id="valueGroupProject"  asp-for="groupProject"/><label>%</label><br>
+    <input id="valueGroupProject" asp-for="groupProject" /><label>%</label><br>
     <label>Quizzes:</label>
-    <input id="valueQuizzes"  asp-for="quizzes"/><label>%</label><br>
+    <input id="valueQuizzes" asp-for="quizzes" /><label>%</label><br>
     <label>Midterm Exam:</label>
-    <input id="valueMidterm"  asp-for="midterm"/><label>%</label><br>
+    <input id="valueMidterm" asp-for="midterm" /><label>%</label><br>
     <label>Final Exam:</label>
-    <input id="valueFinal"  asp-for="final"/><label>%</label><br>
+    <input id="valueFinal" asp-for="final" /><label>%</label><br>
     <label>INTEX:</label>
-    <input id="valueINTEX"  asp-for="intex"/><label>%</label><br><br>
-    <input type="submit" id="calc" value="Calculate" /><br><br>
+    <input id="valueINTEX" asp-for="intex" /><label>%</label><br><br>
+    <button type="submit" id="calc">Calculate</button>
+    @*<input type="submit" id="calc" value="Calculate" /><br><br>*@
     <label id="result"></label>
 
     <div asp-validation-summary="All"></div>
@@ -32,6 +32,5 @@
 <br>
 <br>
 <br>
-
 
 <script src="~/js/gradeCalculator.js"></script>
