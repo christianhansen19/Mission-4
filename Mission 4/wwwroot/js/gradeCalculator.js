@@ -40,8 +40,8 @@
     }
 
     // Display result in the form tag
-    $("#result").html("Final Percentage: " + finalPercentage.toFixed(2).toString() + "%" + '\n' + letterGrade)
+/*    $("#result").html("Final Percentage: " + finalPercentage.toFixed(2).toString() + "%" + '\n' + letterGrade);*/
 
     // Display result in an alert
-    alert("test")
+    alert("Final Percentage: " + finalPercentage.toFixed(2).toString() + "%" + '\n' + letterGrade);
 })
